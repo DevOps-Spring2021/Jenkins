@@ -3,9 +3,9 @@
 ## Infrastructure as Code with Ansible
 
 ## Objective
-Building Jenkins pipeline to deploye application on Kubernetes Cluster 
+Building Jenkins server, to deploye application on Kubernetes Cluster via CI/CD pipeline
 
-### Maintainer \
+### Maintainer
 <table>
     <thead>
       <tr>
