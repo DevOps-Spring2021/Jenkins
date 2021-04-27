@@ -25,6 +25,9 @@ Building Jenkins server, to deploye application on Kubernetes Cluster via CI/CD 
     </tbody>
 </table>
 
+### Architecture
+![](Arc.png)
+
 ### Technology Stack
 * AWS
 * Ansible
@@ -46,3 +49,20 @@ Building Jenkins server, to deploye application on Kubernetes Cluster via CI/CD 
 ```
  $ ansible-playbook terminate.yml -v --extra-var "elastic_ip=<elastic_ip> instance_type=<nstance_type>"
 ```
+
+### Environment Variable Setup in Jenkins Server
+* FRONTEND_IMAGE = <Frontend_docker_repository_name>
+* BACKEND_IMAGE = <Backend_docker_repository_name>
+* resourceGroupName = <Azure_Resource_Group_Name>
+* clusterName = <Azure_Cluster_Name>
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* AWS_DEFAULT_REGION
+* AZURE_CLIENT_ID
+* AZURE_CLIENT_SECRET
+* AZURE_TENANT_ID
+
+
+### Set up credentials in Jenkins server
+* For Docker
+* For EKS Cluster
